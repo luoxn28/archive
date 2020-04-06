@@ -163,7 +163,7 @@ public void run() {
 
 说完了TTL中的capture、replay和restore流程，再看下官方提供的这个时序图，是不是感觉清晰很多。
 
-![image-20200315174314526](_image/transmittable-thread-local：线程间上下文传递解决方案/image-20200315174314526.png)
+![](_image/transmittable-thread-local：线程间上下文传递解决方案/image-20200315174314526.png)
 
 除了通过TtlRunable.get()修饰用户自定义的task之外，还可以修饰线程池和使用Java Agent修饰JDK线程池实现类的方式实现TTL功能。
 
